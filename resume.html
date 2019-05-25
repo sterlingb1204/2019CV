@@ -1,0 +1,326 @@
+<html>
+    <head>
+        <title>Résumé</title>
+            <style>
+                body {
+                  font-family: Arial, sans-serif;
+                }
+
+                .sidebar {
+                  height: 100%;
+                  width: 350px;
+                  position: fixed;
+                  z-index: 1;
+                  top: 0;
+                  left: 0;
+                  background-color: #3e4a56;
+                  overflow-x: hidden;
+                  overflow-y: visible;
+                  padding: 30px 0px 30px 0px;
+                  
+                }
+
+                .sidebar p {
+                  padding-left: 6px;
+                  line-height: 100%;
+                  text-align:left;
+                  margin-left: 75px;
+                  padding-right: 30px;
+                  text-decoration: none;
+                  font-size: 20px;
+                  color: #dddddd;
+                  display: block;
+                }
+                
+            
+                .sidebar h3 {
+                  line-height: 100%;
+                  text-align:left;
+                  margin-left: 50px;
+                  text-decoration: none;
+                  font-size: 25px;
+                  color: #84b1ff;
+                  display: block;
+                }
+            
+                .sidebar hr {
+                  color: #235eaa;
+                  align-self: right; 
+                  margin-left: 50px;
+                }
+            
+                .sidebar img {
+                  width: 150px;
+                  height: 150px;
+                  border-radius: 50%;
+                  border:3px solid #84b1ff;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+
+                .main {
+                  margin-left: 350px; /* Same as the width of the sidebar */
+                  font-size: 28px; /* Increased text to enable scrolling */
+                  padding: 0px 10px;
+                  color: #dddddd;
+                  z-index: -1;
+                }
+            
+                 .main h1 {
+                  font-size: 45px; /* Increased text to enable scrolling */
+                  color: #3e4a56;
+                  text-align:center;
+                  padding-top: 30px;
+                }
+            
+                 .main h3 {
+                  font-size: 34px; /* Increased text to enable scrolling */
+                  color: #84b1ff;
+                  text-align:left;
+                  padding-left: 20px;
+                }
+                
+                .main h4 {
+                  font-size: 28px; /* Increased text to enable scrolling */
+                  color: #3e4a56;
+                  text-align:left;
+                  padding-left: 20px;
+                }
+                
+                .main ul {
+                  font-size: 28px; /* Increased text to enable scrolling */
+                  color: #3e4a56;
+                  padding-left: 80px;
+                  padding-right: 200px;
+                  list-style-type:square;
+                }
+               
+                
+                
+                .skillscontainer{
+                    box-sizing: border-box;
+                    display: flex;
+                    line-height: 1em;
+                }
+                .skillscontainer p{
+                    font-size: 20px;
+                    color: #3e4a56
+                
+                }
+                .skillscontainer b{
+                    font-size: 25px;
+                    color: #3e4a56
+                
+                }
+                
+                .skillscontainer > div{
+                    flex: 1;
+                    flex-direction: row;
+                }
+                
+                .first_third{
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+                
+                .second_third{
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    
+                }
+                .last_third{
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    
+                }
+
+                .barcontainer {
+                  margin-right: 10px;
+                  margin-left: 10px;
+                  background-color: #ddd;
+                }
+
+                .skill {
+                  text-align: right;
+                  padding-right: 20px;
+                  line-height: 25px;
+                  color: white;
+                }
+                .main table, th, td {
+                    border: 2px solid #3e4a56;
+                    border-collapse: collapse;
+                    line-height: 25px;
+                }
+                .main th, td {
+                    padding: 5px;
+                    text-align: left;}
+               
+
+                .python {width: 50%; background-color: #84b1ff;}
+                .office {width: 100%; background-color: #84b1ff;}
+                .html {width: 40%; background-color: #84b1ff;}
+                .french {width: 60%; background-color: #84b1ff;}
+                .leadership {width: 50%; background-color: #84b1ff;}
+                .speaking {width: 75%; background-color: #84b1ff;}
+                .webdev {width: 80%; background-color: #84b1ff;}
+                .social {width: 90%; background-color: #84b1ff;}
+                .case {width: 40%; background-color: #84b1ff;}
+              
+
+                @media screen and (max-height: 450px) {
+                  .sidenav {padding-top: 15px;}
+                  .sidenav a {font-size: 18px;}
+                }
+                
+            </style>
+            
+    </head>
+    <body>
+      <div class="sidebar">
+          <img src="https://lh3.googleusercontent.com/5FgOvipfuAfjtqSYQsNmrHiihhZdiGNWRBcr8O2rYYbi9j4JfCEw5V8MpgBy_GoRooQmhmpEVqT7qiO3dviZWW8NamwR5f93bAaX7z0qVQ_BQ4DcArM8SHjHDtXLe_7Amd-BYjuhwgGjTQrtLmQlc8abnRFDbVemo9VuQ_rU-Eq2BdzMwap-aav-v7OtySoUnDEThRXv2U5Osrt6p7kSssMWa5R7MRo0sWLSg5VkcVqi3xVccqMKLHxCk2TGuLSMtHw_j0ET7WECF4bMcuiIvA8LsvFcQMG0EqL4SJgJKT22UBo7rTRnBFseOziNXleWezu6hRCndiDjTl6a5Gu34JgnEFGuLcgvm8ls6RXweWYF8d5jIbY03tXo8flRQgfGWIeRtmVrG7j1SB9HyiS7h-7OD27RRV518AZgdWTumAaznILBShAetow9ZI9BldtixJ9_a5OEJoBI-_o4LA_Y3ID2tAkJ4qB_3rcwvEZ5COqXhzOOq-og93kCn0w7Oo7ZQhTtrS-nHJjujVJ7zAhvpsW9WevkuRin_pL_2layJ69hUZ4JQEwsDfEB21ZvOOWgfaYV_Fk1Ob4XKiw99TRwKr0mQvFyQPl--Z4hvoY_DOHY1lS8oUTRbOeFbDYPmhL_44Xd63VsevZxXB_uigFRqjlt-hHGearJ=s1842-no" alt="Avatar">
+          
+          <h3>Info</h3>
+          <hr>
+          <p style = "color: #f7faff"><b>Email</b></p>
+          <p style = "padding-left: 15px;"><i>Sbhollah@nd.edu</i></p>
+          <p style = "color: #f7faff"><b>Phone</b></p>
+          <p style = "padding-left: 15px"><i>770-823-3272</i></p>
+          <p style = "color: #f7faff"><b>Address</b></p>
+          <p style = "padding-left: 15px"><i>406 St.Edward's Hall</i></p>
+          
+          <h3>Social Media</h3>
+          <hr>
+          <p style = "text-align:left;"><b><a href= "https://www.linkedin.com/in/sterling-bhollah-338010149/" style = "color:#f7faff;">LinkedIn</a></b></p>
+          
+          <h3>References</h3>
+          <hr>
+          <p style = "color: #f7faff"><b>Sherri Berger</b></p>
+          <p style = "padding-left: 15px"><i>Chief Operating Officer of the Centers for Disease Control and Prevention (CDC)</i></p>
+          <p style = "padding-left: 15px"><i>sob8@cdc.gov</i></p>
+          <p style = "color: #f7faff"><b>Garrett Van de Grift</b></p>
+          <p style = "padding-left: 15px"><i>Chief Executive Officer of Red Wizard Group</i></p>
+          <p style = "padding-left: 15px; padding-bottom: 30px;"><i>gv@redwizardgroup.com</i></p>
+          
+      </div>
+      
+      <div class="main">
+        <h1>Sterling Bhollah</h1>
+      
+        <h3>Education</h3>
+        <hr>
+          <h4>University of Notre Dame</h4>
+              <ul>
+                  <li>Pursuing BBA in Business Analytics with minor in Data Science</li>
+                  <li>Class of 2022</li>
+                  <li>GPA: 3.92</li>
+              </ul>
+          <h4>George Walton Comprehensive High School</h4>
+              <ul>
+                  <li>Class of 2018</li>
+              </ul>
+          
+        <h3>Work Experience</h3>
+        <hr>
+              <h4>Centers for Disease Control and Prevention</h4>
+                  <ul>
+                      <li> Laboratory Response Network intern </li>
+                      <li> Day to day responsibilities included 
+                          corresponding with public health professionals across the world in 
+                          order to organize the LRN National meeting held each September.</li>
+                  </ul> 
+          
+              <h4>Red Wizard Group</h4>
+                  <ul>
+                      <li>Server-side development intern</li>
+                      <li>Built websites in WordPress and some html</li>
+                          <ul style = "padding-left: 60px; list-style-type:circle;">
+                              <li>Check out the website that I built: <a href = "https://www.vendpurchasegroup.com" style =  "color: #3e4a56">Vend Purchase Group</a>.
+                          </ul>
+                      <li>Developed Python program that automates spreadsheet auditing for <a href = "https://www.rmsassist.com" style = "color: #3e4a56">Rental Monitoring Solutions</a>.</li>
+                  </ul>
+          
+              
+          
+        
+        <h3>Skills and Expertise</h3>
+        <hr>
+          
+          <div class = "skillscontainer">
+              <div class = "first_third">
+                  
+                  <b>Python</b>
+                  <div class = "barcontainer">
+                      <div class = "skill python"><p>50%</p></div>
+                  </div>
+                  
+                  <b>Web Development</b>
+                  <div class = "barcontainer">
+                      <div class = "skill webdev"><p>80%</p></div>
+                  </div>
+                  
+                  <b>HTML/CSS</b>
+                  <div class = "barcontainer">
+                      <div class = "skill html"><p>40%</p></div>
+                  </div>
+                  
+              </div>
+
+              <div class = "second_third">
+                  <b>French</b>
+                  <div class = "barcontainer">
+                      <div class = "skill french"><p>60%</p></div>
+                  </div>
+                  
+                  <b>Public Speaking</b>
+                  <div class = "barcontainer">
+                      <div class = "skill speaking"><p>75%</p></div>
+                  </div>
+                  
+                  <b>Microsoft Office</b>
+                  <div class = "barcontainer">
+                      <div class = "skill office"><p>100%</p></div>
+                  </div>
+              </div>
+
+              <div class = "last_third">
+                  <b>Leadership</b>
+                  <div class = "barcontainer">
+                      <div class = "skill leadership"><p>50%</p></div>
+                  </div>
+                  <b>Social Media</b>
+                  <div class = "barcontainer">
+                      <div class = "skill social"><p>90%</p></div>
+                  </div>
+                  <b>Case Competitions</b>
+                  <div class = "barcontainer">
+                      <div class = "skill case"><p>40%</p></div>
+                  </div>
+              </div>
+              
+          </div>
+          
+          <h3>Current and Completed Projects</h3>
+          <hr>
+          
+              <table style="width:50%">
+ 
+              <tr>
+                <td><b>Smart Alarm Clock using Raspberry Pi</b></td>
+                <td><b>Building a Guitar</b></td>
+              </tr>
+              <tr>
+                <td><b>TedxWaltonHigh</b></td>
+                <td><b>Habitat for Humanity</b></td>
+              </tr>
+              <tr>
+                <td><b><a href= "https://expolitus.com/password">Expolitus Online Market</a></b></td>
+                <td><b>Integrated Touch Screen Pad for Desktop</b></td>
+              </tr>
+            </table>
+          
+        </div>
+          
+    </body>
+    
+</html> 

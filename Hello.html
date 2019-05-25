@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>Enter your name</h1>
+        <form>
+            <input type = 'text' name = 'user' value = "{{','.join(user) }}">
+            <input type = 'submit'>
+        </form>
+        {% if user %}
+            <ul>
+            {% for name in user %}
+        <li>Hello, {{ user }}!</li>
+        {% end %}
+            </ul>
+        {% end %}
+        
+    </body>
+</html>
